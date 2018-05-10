@@ -1,3 +1,4 @@
+//clock word problem
 var allHours = ["twelve","One","Two","Three","Four","Five","Six","Seven","eight" ,"nine" ,"ten","Eleven"];
 var allTensMinutes = ["oh","","Twenty","Thirty","Forty","Fifty"];
 var allOnesMinutes = ["","one","two","three","four","five","six","seven","eight","nine"];
