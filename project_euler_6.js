@@ -1,4 +1,4 @@
-//project euler problem #2
+//project euler problem #6
 //Sum square difference
 //finished
 let sum1 = 0;

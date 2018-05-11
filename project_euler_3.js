@@ -1,4 +1,4 @@
-//project euler problem #2
+//project euler problem #3
 //Find the largest prime factor of a composite number
 //finished
 let largestPrime = 1;
