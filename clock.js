@@ -1,14 +1,15 @@
 //clock word problem
-var allHours = ["twelve","One","Two","Three","Four","Five","Six","Seven","eight" ,"nine" ,"ten","Eleven"];
-var allTensMinutes = ["oh","","Twenty","Thirty","Forty","Fifty"];
-var allOnesMinutes = ["","one","two","three","four","five","six","seven","eight","nine"];
-var allSpecialMinutes = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
-var amPm;
+//finished
+let allHours = ["twelve","One","Two","Three","Four","Five","Six","Seven","eight" ,"nine" ,"ten","Eleven"];
+let allTensMinutes = ["oh","","Twenty","Thirty","Forty","Fifty"];
+let allOnesMinutes = ["","one","two","three","four","five","six","seven","eight","nine"];
+let allSpecialMinutes = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+let amPm;
 
 function alarmClock(currenttime){
 
-    var currentHour = parseInt(currenttime.substring(0,2));
-    var currentMinute = parseInt(currenttime.substring(3,5));
+    let currentHour = parseInt(currenttime.substring(0,2));
+    let currentMinute = parseInt(currenttime.substring(3,5));
 
     if((currentHour<0 || currentHour >23) || (currentMinute<0 || currentMinute >59) || (currenttime.length!=5) || (currenttime.charAt(2)!= ':')){
         return "invalid time";
@@ -20,8 +21,8 @@ function alarmClock(currenttime){
     else {
         amPm = "am";
     }
-    var wordHour = allHours[currentHour];
-    var wordMinute;
+    let wordHour = allHours[currentHour];
+    let wordMinute;
     if(currentMinute>=10 && currentMinute<=19){
         wordMinute = allSpecialMinutes[currentMinute%10];
     }

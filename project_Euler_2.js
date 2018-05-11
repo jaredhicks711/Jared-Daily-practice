@@ -1,5 +1,6 @@
 //project euler problem #2
 //Even Fibonacci numbers
+//finished
 let fib1= 1;
 let fib2 =2;
 let sum = 0;
