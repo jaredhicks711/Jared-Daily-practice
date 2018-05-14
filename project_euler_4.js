@@ -1,6 +1,6 @@
 //project euler problem #4
 //Largest palindrome product
-//finished
+//finished 
 let largestPali = 0;
 function isPalindrome(num){
     let num1 = num.toString();
