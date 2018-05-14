@@ -11,7 +11,7 @@ function alarmClock(currenttime){
     let currentHour = parseInt(currenttime.substring(0,2));
     let currentMinute = parseInt(currenttime.substring(3,5));
 
-    if((currentHour<0 || currentHour >23) || (currentMinute<0 || currentMinute >59) || (currenttime.length!=5) || (currenttime.charAt(2)!= ':')){
+    if((currentHour<0 || currentHour >23) || (currentMinute<0 || currentMinute >59) || (currenttime.length!==5) || (currenttime.charAt(2)!== ':')){
         return "invalid time";
     }
     if(currentHour>=12) {
@@ -26,7 +26,7 @@ function alarmClock(currenttime){
     if(currentMinute>=10 && currentMinute<=19){
         wordMinute = allSpecialMinutes[currentMinute%10];
     }
-    else if(Math.floor(currentMinute/10)== 0 && currentMinute%10 == 0){
+    else if(Math.floor(currentMinute/10)=== 0 && currentMinute%10 === 0){
         wordMinute = "";
     }
     else{

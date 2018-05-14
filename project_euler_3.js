@@ -6,7 +6,7 @@ function findLargestPrime(num) {
     let currentNum = num;
     while (largestPrime <= currentNum) {
         for (let i = 2; i <= currentNum; i++) {
-            if (currentNum % i == 0) {
+            if (currentNum % i === 0) {
                 if (i > largestPrime) {
                     largestPrime = i;
                 }
