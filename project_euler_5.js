@@ -7,13 +7,11 @@ let num = 1;
 function norem(max) {
     while(findingnum){
         for(let i = 1;i<=max;i++){
-            if(num % i === 0){
-                if(i===max){
+            if(num % i === 0 && i===max){
                     return num;
                     findingnum = false;
-                }
             }
-            else{
+            else if(num%i!== 0){
                 break;
             }
         }
